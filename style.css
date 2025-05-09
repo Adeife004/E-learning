@@ -1,0 +1,823 @@
+/* Reset */
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    background: #F1F1F3;
+    font-family: "Be Vietnam Pro", sans-serif;
+    overflow-x: hidden;
+}
+
+
+/* ads styling */
+.ads {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ff9500;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 6px;
+    font-weight: 400;
+    text-align: center;
+    gap: 10px;
+    color: #fff;
+}
+
+.ads h3,
+.ads i {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+/* nav styling */
+nav {
+    padding: 16px 60px 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 44px;
+}
+
+.nav-link {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #ff9500;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ff9500;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* button-container styling */
+.button-container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+}
+
+.button-container button {
+    padding: 10px 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Button Hover Effects */
+.button-container .btn1 {
+    color: #262626;
+    background: transparent;
+    border: 2px solid #ff9500;
+}
+
+.button-container .btn1:hover {
+    border: 2px solid #ff9500;
+    background: #ff9500;
+    color: #fff;
+}
+
+.button-container .btn2 {
+    border: 2px solid #ff9500;
+    background: #ff9500;
+    color: #fff;
+}
+
+.button-container .btn2:hover {
+    background: transparent;
+    color: #262626;
+    border: 2px solid #ff9500;
+}
+
+/* hero-section styles */
+.hero-section {
+    margin-top: 5%;
+    padding: 16px 20px;
+}
+
+.hero-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.abstract-line {
+    position: absolute;
+    top: -25px;
+    left: -10px;
+}
+
+.abstract-line img {
+    width: 35px;
+}
+
+.sub-container {
+    background: #fcfcfd;
+    display: flex;
+    padding: 10px 10px;
+    align-items: center;
+    text-align: center;
+    gap: 2px;
+    font-weight: 600;
+    border: 1px solid #f1f1f3;
+    border-radius: 8px;
+    color: #1a1a1a;
+}
+
+.sub-container i {
+    background: #fff4e5;
+    border: 1px solid #fff4e5;
+    border-radius: 6px;
+    padding: 6px;
+}
+
+.sub-container h5 {
+    margin: 0;
+    font-size: 14px;
+}
+
+.sub-container span {
+    color: #FF9500;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-container h4 {
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.text-container p {
+    font-size: 15px;
+    text-align: center;
+}
+
+.button-section {
+    margin-top: 3%;
+    text-align: center;
+}
+
+.button-section button {
+    padding: 10px;
+    border: none;
+    font-weight: 500;
+}
+
+#exploreCourse {
+    background: #ff9500;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+}
+
+#exploreCourse:hover {
+    background: transparent;
+    border: 2px solid #ff9500;
+    color: #262626;
+}
+
+#viewPricing {
+    background: #f1f1f3;
+    border-radius: 6px;
+    border: 2px solid #ff9500;
+    color: #262626;
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+}
+
+#viewPricing:hover {
+    background: #ff9500;
+    color: #fff;
+}
+
+/* advert-container styles */
+.advert-scroll-wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
+.advert-container {
+    display: flex;
+    width: fit-content;
+    animation: scroll-horizontal 25s linear infinite;
+}
+
+.advert-track {
+    display: flex;
+    gap: 10px;
+}
+
+.advert {
+    flex: 0 0 auto;
+}
+
+.advert img {
+    width: 150px;
+    display: block;
+}
+
+@keyframes scroll-horizontal {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.video-container {
+    width: 100%;
+    padding: 16px 10px;
+}
+
+.video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* benefit-container, courses-container, testimonial-container styles */
+.benefit-container,
+.courses-container,
+.testimonial-container,
+.ourpricing-container {
+    padding: 16px 10px;
+    background: #fcfcfd;
+    border-radius: 6px;
+}
+
+
+.benefit-container h2,
+.courses-container h2,
+.testimonial-container h2,
+.ourpricing-container h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #262626;
+}
+
+.benefit p,
+.courses p,
+.testimonial p,
+.our-pricing p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: #59595a;
+}
+
+.benefit button,
+.courses button,
+.testimonial button,
+.m-btn {
+    background: #ff9500;
+    border: 1px solid #f1f1f3;
+    border-radius: 6px;
+    padding: 14px 20px;
+    font-size: 14px;
+    color: #262626;
+    font-weight: 500;
+}
+
+/* benefitcard-container styles */
+.benefitcard-container,
+.courses-card,
+.testimonial-card {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.benefit-card {
+    background-color: #ff9500;
+    border: 1px #f1f1f3;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    padding: 28px;
+    transition: 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.benefit-card:hover,
+.coursescard:hover,
+.testimonialcard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.number {
+    position: absolute;
+    top: 10px;
+    right: 16px;
+}
+
+.number h2 {
+    font-size: 24px;
+}
+
+button {
+    align-self: flex-end;
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: auto;
+}
+
+/* courses styles */
+.coursescard {
+    padding: 10px;
+    background-color: #ff9500;
+    border: 1px #f1f1f3;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.courses-image img {
+    width: 100%;
+}
+
+.text-1 {
+    margin-top: 2%;
+    display: flex;
+    gap: 20px;
+}
+
+.text-1 p {
+    background: #f1f1f1;
+    border-radius: 6px;
+    padding: 8px 14px 8px 14px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.text-2 h5 {
+    font-size: 15px;
+    color: #262626;
+}
+
+.courses-subcontainer {
+    margin-top: 2%;
+}
+
+.courses-subcontainer h5 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #262626;
+}
+
+.courses-subcontainer p {
+    margin-top: 3%;
+    font-size: 14px;
+    font-weight: 400;
+    color: #4c4c4d;
+}
+
+.courses-button button {
+    margin-top: 3%;
+    width: 100%;
+    padding: 14px 30px;
+    border-radius: 6px;
+    border: 1px;
+    background: #f7f7f8;
+    color: #262626;
+    font-style: 14px;
+    font-weight: 500;
+}
+
+/* testimonial-container styles */
+.testimonialcard {
+    padding: 12px 16px;
+    background-color: #ff9500;
+    border: 1px #f1f1f3;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.testimonialcard p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #262626;
+}
+
+.testimonial-des {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    color: #262626;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+}
+
+.name h5 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.testimonial-des img {
+    width: 50px;
+}
+
+.testimonial-des button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    background: #f7f7f8;
+    color: #262626;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* ourpricing-container styles */
+.ourpricing-btn {
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.y-btn {
+    background: #f1f1f1;
+    border: 2px solid #ff9500;
+    border-radius: 6px;
+    padding: 14px 20px;
+    font-size: 14px;
+    color: #262626;
+    font-weight: 500;
+}
+
+/* ourpricing-plan */
+.ourpricing-plan {
+    margin-top: 4%;
+    padding: 10px 0;
+}
+
+.free-plan,
+.pro-plan {
+    background: #f1f1f3;
+    padding: 10px;
+}
+
+.free-plan h4,
+.pro-plan h4 {
+    margin: 0;
+    color: #262626;
+    background: #ffeacc;
+    text-align: center;
+    border: 1px solid #ffeacc;
+    font-size: 15px;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.amountplan {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    gap: 0;
+}
+
+.amountplan h4 {
+    margin: 0;
+    background: none;
+    font-size: 30px;
+    font-weight: 600;
+    color: #262626;
+}
+
+/* availableplan styles */
+.availableplan {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.availableplan h4 {
+    background: none;
+    margin: 0;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: #262626;
+}
+
+.feature-items {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    padding: 12px;
+    border: 1px solid #f1f1f3;
+    border-radius: 6px;
+    gap: 8px;
+}
+
+.feature-items i {
+    width: 24px;
+    height: 24px;
+    background: #fff4e5;
+    border-radius: 4px;
+    text-align: center;
+    padding-top: 4px;
+}
+
+.feature-items p {
+    width: 181px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #4c4c4d;
+    text-align: start;
+}
+
+.availableplan button {
+    border: 1px solid;
+    margin-top: 3%;
+    padding: 18px 24px 18px 24px;
+    background: #ff9500;
+    color: #fff;
+    width: 100%;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    text-align: center;
+}
+
+/* footer-section styles */
+.footer-section {
+    padding: 12px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.f-section {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.f-section img {
+    width: 48px;
+}
+
+.footer-des {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.footer-des p {
+    margin: 0;
+}
+
+.s-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.home-section li,
+.aboutus-section li{
+    list-style-type: none;
+}
+
+.home-section h3,
+.aboutus-section h3,
+.socialprofile-section h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.social-profile {
+    display: flex;
+    gap: 10px;
+}
+
+.socialprofile-section i {
+    font-size: 20px;
+}
+
+.footer-text p{
+    margin: 0;
+    text-align: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: #4c4c4d;
+    background: #ff9500;
+}
+
+/* Mobile Responsiveness for small screen */
+@media screen and (min-width: 360px) {
+    .abstract-line {
+        position: absolute;
+        top: -20px;
+        left: 12px;
+    }
+}
+
+@media screen and (min-width: 390px) {
+    .abstract-line {
+        position: absolute;
+        top: -18px;
+        left: 30px;
+    }
+}
+
+/* Mobile Responsiveness for big screen */
+@media screen and (min-width: 768px) {
+    .navbar {
+        padding: 16px 40px;
+    }
+
+    .ads h3 {
+        font-size: 16px;
+    }
+
+    .navbar-nav {
+        margin-left: 30%;
+        gap: 20px;
+    }
+
+    .hero-section {
+        margin-top: 2%;
+    }
+
+    .hero-content {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .abstract-line {
+        left: 110px;
+    }
+
+    .sub-container {
+        width: 500px;
+        padding: 15px 20px;
+        gap: 15px;
+    }
+
+    .sub-container h5 {
+        font-size: 24px;
+    }
+
+    .text-container {
+        margin-top: 2%;
+        width: 100%;
+    }
+
+    .button-section {
+        margin-top: 0;
+    }
+
+    /* video-container styles */
+    .video-container {
+        padding: 16px 40px;
+    }
+
+    /* benefit-container styles */
+    .benefit-container,
+    .courses-container,
+    .testimonial-container,
+    .ourpricing-container {
+        padding: 16px 40px;
+    }
+
+    .benefit,
+    .courses,
+    .testimonial {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: start;
+    }
+
+    .benefit button,
+    .courses button,
+    .testimonial button {
+        width: 10%;
+    }
+
+    .benefitcard-container,
+    .courses-card,
+    .testimonial-card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    /* ourpricing-plan */
+    .ourpricing-plan {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .free-plan,
+    .pro-plan {
+        width: 100%;
+    }
+
+    .feature-items p {
+        width: 100%;
+    }
+
+    /* footer-section styles */
+    .footer-section {
+        padding: 40px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        /* text-align: center; */
+    }
+
+    .f-section {
+        width: 50%;
+    }
+
+    .s-section {
+        width: 50%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .abstract-line {
+        left: 120px;
+    }
+}
+
+/* mobile responsiveness */
+@media screen and (min-width: 1024px) {
+    .abstract-line {
+        left: 270px;
+    }
+
+    .benefitcard-container,
+    .courses-card {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .abstract-line {
+        left: 350px;
+    }
+}

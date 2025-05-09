@@ -1,0 +1,516 @@
+/* Reset */
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    background: #F1F1F3;
+    font-family: "Be Vietnam Pro", sans-serif;
+    overflow-x: hidden;
+}
+
+
+/* ads styling */
+.ads {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ff9500;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 6px;
+    font-weight: 400;
+    text-align: center;
+    gap: 10px;
+    color: #fff;
+}
+
+.ads h3,
+.ads i {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+/* nav styling */
+nav {
+    padding: 16px 60px 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 44px;
+}
+
+.nav-link {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #ff9500;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ff9500;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* button-container styling */
+.button-container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+}
+
+.button-container button {
+    padding: 10px 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Button Hover Effects */
+.button-container .btn1 {
+    color: #262626;
+    background: transparent;
+    border: 2px solid #ff9500;
+}
+
+.button-container .btn1:hover {
+    border: 2px solid #ff9500;
+    background: #ff9500;
+    color: #fff;
+}
+
+.button-container .btn2 {
+    border: 2px solid #ff9500;
+    background: #ff9500;
+    color: #fff;
+}
+
+.button-container .btn2:hover {
+    background: transparent;
+    color: #262626;
+    border: 2px solid #ff9500;
+}
+
+/* hero-section styles */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    margin: 10px;
+    margin-top: 3%;
+}
+
+.login-container {
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.login-text {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-text h3 {
+    font-size: 24px;
+}
+
+.login-text p {
+    margin: 0;
+    font-size: 15px;
+    color: #59595a;
+}
+
+.email,
+.password,
+.full-name {
+    display: flex;
+    flex-direction: column;
+    text-align: start   ;
+    padding: 5px 0;
+    gap: 5px;
+}
+
+.password-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-wrapper input {
+    width: 100%;
+    padding-right: 40px; 
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    color: #666;
+}
+
+
+input {
+    padding: 8px;
+    border: 1px solid;
+}
+
+.forgot-password,
+.agreement {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+}
+
+.agreement label {
+    font-size: 12px;
+}
+
+.forgot-password {
+    margin: 2%;
+    float: right;
+}
+
+.forgot-password a {
+    text-decoration: none;
+    color: #262626;
+}
+
+.agreement a {
+    color: #262626;
+}
+
+.remember-me {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.button {
+    margin-top: 20px;
+}
+
+.button button {
+    width: 100%;
+    padding: 10px 16px;
+    background: #ff9500;
+    color: #fff;
+    border-radius: 6px;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.button button:hover {
+    background: #fff;
+    color: #ff9500;
+    border: 1px solid #ff9500;
+}
+
+.or {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.or::before,
+.or::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #ccc;
+}
+
+.or::before {
+    margin-right: 10px;
+}
+
+.or::after {
+    margin-left: 10px;
+}
+
+.login-with-google button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #5f6368;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+.login-with-google button:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.google-icon {
+    display: flex;
+    align-items: center;
+}
+
+.login-with-google span {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.no-account {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+.no-account a {
+    color: #ff9500;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.no-account a:hover {
+    color: #e67e00;
+}
+
+/* testimonial-container */
+.testimonial-container {
+    padding: 20px;
+}
+
+.testimonial-content {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.testimonial-text p {
+    text-align: start;
+}
+
+.testimonial-content p {
+    font-size: 15px;
+    text-align: start;
+    color: #59595a;
+}
+
+.testimonial-des {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 2px;
+}
+
+.name img {
+    width: 40px;
+}
+
+.name h5 {
+    margin: 0;
+    font-size: 15px;
+}
+
+.testimonial-btn button {
+    padding: 8px 12px;
+    background: #ff9500;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+}
+
+.arrow-btn {
+    margin-top: 20px;
+    display: flex;
+    justify-content: end;
+    gap: 25px;
+}
+
+.arrow-btn1,
+.arrow-btn2 {
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid #262626;
+}
+
+/* footer-section styles */
+.footer-section {
+    padding: 12px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.f-section {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.f-section img {
+    width: 48px;
+}
+
+.footer-des {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.footer-des p {
+    margin: 0;
+}
+
+.s-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.home-section li,
+.aboutus-section li{
+    list-style-type: none;
+}
+
+.home-section h3,
+.aboutus-section h3,
+.socialprofile-section h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.social-profile {
+    display: flex;
+    gap: 10px;
+}
+
+.socialprofile-section i {
+    font-size: 20px;
+}
+
+.footer-text p{
+    margin: 0;
+    text-align: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: #4c4c4d;
+    background: #ff9500;
+}
+
+/* Mobile Responsiveness for big screen */
+@media screen and (min-width: 768px) {
+    .navbar {
+        padding: 16px 40px;
+    }
+
+    .ads h3,
+    .ads i {
+        font-size: 16px;
+    }
+
+    .navbar-nav {
+        margin-left: 30%;
+        gap: 20px;
+    }
+
+    /* hero-section */
+    .hero-section {
+        flex-direction: row;
+        padding: 16px 40px;
+    }
+
+    .login-container {
+        order: 2;
+    }
+
+    .testimonial-container {
+        order: 1;
+    }
+
+    .login-container,
+    .testimonial-container {
+        width: 50%;
+        /* margin: 0 auto; */
+    }
+
+    .email,
+    .password,
+    .full-name {
+        text-align: start;
+    }
+
+    input {
+        border: 1px solid #ccc;
+        padding: 10px 16px;
+        border-radius: 6px;
+    }
+
+    .testimonial-text p,
+    .testimonial-content p {
+        text-align: start;
+    }
+
+     /* footer-section styles */
+     .footer-section {
+        padding: 40px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .f-section {
+        width: 50%;
+    }
+
+    .s-section {
+        width: 50%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
