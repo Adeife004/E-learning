@@ -840,23 +840,3 @@ button {
     opacity: 1;
     transform: translateX(0);
 }
-
-/* Add animation classes to existing elements */
-.benefit-card,
-.coursescard,
-.testimonialcard,
-.free-plan,
-.pro-plan {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-.benefit-card.active,
-.coursescard.active,
-.testimonialcard.active,
-.free-plan.active,
-.pro-plan.active {
-    opacity: 1;
-    transform: translateY(0);
-}
